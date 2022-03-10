@@ -52,3 +52,67 @@ h4{
   padding-top: 1rem;
   max-width: 350px;
 }
+
+/* Card Item*/
+.section__cards{
+  padding: 4rem;
+
+}
+.card__grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow-inline: 1rem;
+  flex-wrap: wrap;
+}
+.card{
+  position: relative;
+  width: 170px;
+  
+}
+.card__img{
+  height: 230px;
+  border-radius: 9px;
+}
+.card__status{
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: white;
+  border-radius: 2px;
+  margin: 0.5rem;
+  padding: 0.2rem;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  
+}
+.card__stats{
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  font-size: 0.75rem;
+}
+.card__star{
+  width: 14px;
+  height: 14px;
+  
+}
+.rating{
+  font-weight: var(--fw-semibold);
+}
+.stock{
+  color:#918E9B
+}
+.country{
+  color:#918E9B
+}
+.card__title{
+  font-size: 0.7rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.card__price-data{
+  font-size: 0.7rem;
+}
+.card__price{
+  font-weight: var(--fw-bold);
+}
