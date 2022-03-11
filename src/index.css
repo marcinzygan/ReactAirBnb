@@ -60,12 +60,15 @@ h4{
 }
 .card__grid{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  /* justify-content: space-around;
   overflow-inline: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 .card{
+  flex: 0 0 auto;
   position: relative;
   width: 170px;
   

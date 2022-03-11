@@ -3,17 +3,19 @@ import Hero from "./components/Hero"
 import Card from "./components/Card"
 import Data from "./data"
 export default function App(){
+  
   const cardData = Data.map(item => 
-    <Card  
-        title = {item.title}
-        price = {item.price} 
-        img = {item.coverImg} 
-        rating = {item.stats.rating}
-        reviewCount = {item.stats.reviewCount}
-        country = {item.location} 
-        status = {item.status}
-       
-    
+  
+    <Card
+        key= {item.id}  
+        item={item}
+        // title = {item.title}
+        // price = {item.price} 
+        // img = {item.coverImg} 
+        // rating = {item.stats.rating}
+        // reviewCount = {item.stats.reviewCount}
+        // location = {item.location} 
+        // status = {item.openSpots}
     />
     )
     return(
