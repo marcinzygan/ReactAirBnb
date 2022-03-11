@@ -10,7 +10,7 @@ export default function Card (props){
         <div className="card">
             <div className="card__img-container">
                <img src={require(`./images/${props.img}`)} className="card__img"></img>
-               <p className="card__status">Sold Out</p>
+               <p className="card__status">{props.status}</p>
             </div>
             <div className="card__info">
                 <div className="card__stats">
@@ -21,6 +21,7 @@ export default function Card (props){
                 </div>
                 <p className="card__title">{props.title}</p>
                 <p className="card__price-data"><span className="card__price">From ${props.price}</span> / person</p>
+                <p></p>
             </div>
         </div>
        
